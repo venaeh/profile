@@ -17,6 +17,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg-main);
+  background-image: url(assets/background/20440965.png);
   color: var(--text-main);
   line-height: 1.6;
 }
