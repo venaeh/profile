@@ -149,7 +149,7 @@ body {
 }
 
 .card span {
-  color: var(--accent);
+  color: var(--discord-pallete);
 }
 
 .card h3 {
