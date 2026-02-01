@@ -68,6 +68,10 @@ body {
   font-weight: 700;
 }
 
+.hero-content .hero-name {
+  color: var(--accent);
+}
+
 .skill .nothing {
   color: var(--text-main);
 }
