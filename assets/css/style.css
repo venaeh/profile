@@ -118,7 +118,7 @@ body {
 }
 
 .about .about-name {
-  color: var(--discord-pallete);
+  color: var(--accent);
 }
 
 .about h2 {
