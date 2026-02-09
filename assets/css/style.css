@@ -50,6 +50,8 @@ body {
   color: var(--accent);
 }
 
+
+
 .navbar-img {
   margin-left: -50px;
   padding: 10px 30px;
@@ -75,8 +77,13 @@ body {
   font-size: 35px;
   background: none;
   border: none;
-  color: var(--accent)
+  color: var(--text-main)
 }
+
+.navbar button:hover {
+  color: var(--accent);
+}
+
 
 /* Sidebar kanan */
 .sidebar {
