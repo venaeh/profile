@@ -27,22 +27,24 @@ body {
   justify-content: space-between;
   background-color: var(--bg-main);
   align-items: center;
-  padding: 5px 30px;
+  padding: 15px 30px;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 30;
 }
 
 .navbar ul {
+  margin-left: 900px;
+  margin-right: -325px;
   display: flex;
-  gap: 5px;
+  gap: 20px;
   list-style: none;
 }
 
 .navbar a {
   text-decoration: none;
   color: var(--text-main);
-  font-size: 22px;
+  font-size: 25px;
   transition: 0.3s;
 }
 
@@ -50,25 +52,24 @@ body {
   color: var(--accent);
 }
 
-.navbar-img {
-  margin-left: -50px;
-  padding: 10px 30px;
+.sidebar .profile-picture { 
+  position: fixed;
+  padding: 150px 25px;
+  z-index: 60;
   display: flex;
-  gap: 13px;
 }
 
-.navbar-img img {
-  gap: 25px;
-  width: 60px;
-  height: 60px;
+.sidebar .profile-picture img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-}
-
-.navbar-img .discord-username {
-  color: var(--accent);
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-btn {
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,31 +84,73 @@ body {
 }
 
 .sidebar {
-  z-index: 10;
-  width: 300px;
+  z-index: 50;
+  width: 375px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0px;
-  right: -300px;
+  right: -375px;
   transition: 0.6s;
-  padding-top: 90px;
 }
 
-.sidebar ul{
+.sidebar-header {
+  justify-content: flex-end;
+  min-height: 75px;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.4)
+    ),
+    url("../images/header.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-btn {
+  padding: 15px 0px;
+  margin-bottom: 130px;
+  margin-right: 35px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  background: none;
+  border: none;
+  color: var(--text-main);
+}
+
+.sidebar button:hover {
+  color: var(--accent);
+}
+
+.sidebar-menu {
+  padding: 60px 0px;
+}
+
+.sidebar-menu h2 {
+  color: var(--accent);
+  padding: 0px 25px;
+}
+
+.sidebar-menu p {
+  padding: 0px 25px;
+}
+
+.sidebar-menu ul{
   list-style: none;
   display: block;
 }
 
-.sidebar a {
+.sidebar-menu a {
   font-size: 22px;
   text-decoration: none ;
   display: block;
-  padding: 25px;
+  padding: 25px 40px;
   color: var(--text-main)
 }
 
-.sidebar a:hover {
+.sidebar-menu a:hover {
   color: var(--accent);
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -130,7 +173,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: -25px;
 }
